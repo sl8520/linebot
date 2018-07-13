@@ -15,7 +15,7 @@ module.exports = {
     post() {
         console.warn(moment().format('YYYY-MM-DD HH:mm:ss') + ': 爬蟲GOGO');
         request.post({
-            url: 'http://rate.bot.com.tw/xrt?Lang=zh-TW',
+            url: 'https://rate.bot.com.tw/xrt?Lang=zh-TW',
             encoding: 'utf8',
             timeout: 1000 * 20
         }, (err, resp, body) => {
